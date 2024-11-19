@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('todolis.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+input[type="password"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #D2B48C; 
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b68e62; 
+}
+
+button[type="submit"] {
+  border-radius: 8px; 
+}
+
+
+.task-item {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+.task-item {
+  display: flex;
+  align-items: center; 
+}
+
+
+.task-item .task-text {
+  flex-grow: 1; 
+}
+
+.task-item .actions {
+  display: flex; 
+  margin-left: 10px; 
+}
+
+.task-item {
+  display: flex;
+  align-items: center; 
+}
+
+.task-item .task-text {
+  flex-grow: 1; 
+}
+
+.task-item .actions {
+  margin-left: 10px; 
+}
+
+.task-item .actions {
+  display: flex; 
+}
+
+.task-item .actions button:first-child {
+  margin-left: 0; 
+}
+
+.task-item .actions button {
+  margin-left: 5px; 
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+}
+
+.actions {
+  display: flex;
+  gap: 5px; 
+}

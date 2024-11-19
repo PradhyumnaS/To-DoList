@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #auth {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="auth">
+      <button id="showLoginSignup">Login/Signup</button>
+      <span id="username" style="display: none; margin-right:4px; vertical-align:middle"></span>
+      <button id="logoutButton" style="display: none;">Logout</button>
+    </div>
+    <div id="todoApp">
+      <h1>To-Do List</h1>
+      <div id="taskList">
+        <!-- Tasks will be displayed here -->
+      </div>
+      <form id="addTaskForm">
+        <input type="text" id="taskInput" placeholder="Add a new task..." required>
+        <button type="submit">Add Task</button>
+      </form>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
